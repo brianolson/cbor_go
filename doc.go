@@ -4,6 +4,8 @@ http://tools.ietf.org/html/rfc7049
 
 In can be thought of as "binary JSON" but is a superset and somewhat richer representation than JSON.
 
+import cbor "bitbucket.org/bodhisnarkva/cbor/go"
+
 Other implementations and more information can also be found at:
 http://cbor.io/
 
