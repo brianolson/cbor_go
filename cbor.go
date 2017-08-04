@@ -512,8 +512,7 @@ func (dec *Decoder) decodeMap(rv reflect.Value, cborInfo byte, aux uint64) error
 	switch drv.Kind() {
 	case reflect.Interface:
 		//log.Print("decode map into interface ", drv.Type().String())
-		// TODO: maybe I should make this map[string]interface{}
-		nob := make(map[interface{}]interface{})
+		nob := make(map[string]interface{})
 		irv = reflect.ValueOf(nob)
 		ma = &mapReflectValue{irv}
 		keyType = irv.Type().Key()
